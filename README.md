@@ -1,1 +1,1 @@
-# bash-script-test
+This mini project covers essential Bash scripting for infrastructure automation. I implemented functions to check script arguments, activate infrastructure environments, verify AWS CLI installation and confirm the AWS profile environment variable is set. Each check is modular and reusable. These patterns help prevent runtime errors and enforce best practices, making scripts more reliable for cloud and DevOps workflows. This project improved my confidence in writing robust automation scripts for real-world environments.

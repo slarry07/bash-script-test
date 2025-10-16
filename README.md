@@ -1,28 +1,29 @@
-# Bash Script Functions Project
+# DataWise Solutions Bash Automation Project
 
 ## Overview
-This project demonstrates how to organize shell scripts using functions for clarity and modularity. The script includes functions to check if required arguments are provided, verify AWS CLI installation, ensure AWS authentication environment variables are set, and activate the infrastructure environment.
+This project delivers a Bash script for DataWise Solutions clients that automates the setup of AWS EC2 instances and S3 buckets. The script is organized using modular functions to ensure clarity, maintainability, and reusability.
 
 ## Features
-- Checks that script arguments are supplied
-- Verifies AWS CLI is installed
-- Confirms AWS profile environment variable is set
-- Demonstrates best practices for encapsulating logic in Bash functions
+- Checks if the script is called with the required argument
+- Verifies AWS CLI is installed before proceeding
+- Confirms necessary AWS environment variables or profiles are set
+- Organizes AWS automation logic within well-defined Bash functions
 
 ## Usage
-1. Clone the repository or copy the script file.
-2. Ensure the script has execute permission: `chmod +x script.sh`
-3. Run the script with required arguments: `./script.sh <your-argument>`
+1. Clone or download the script file.
+2. Give execute permission: `chmod +x setup.sh`
+3. Run the script with required arguments: `./bash.sh <environment>`
 
 ## Functions
-- `check_num_of_args`: Ensures required arguments are provided
-- `activate_infra_environment`: Activates or sets up the infrastructure environment
-- `check_aws_cli`: Checks if AWS CLI is installed
-- `check_aws_profile`: Verifies the AWS profile environment variable is set
+- `check_num_of_args`: Ensures the script receives the correct number of arguments
+- `activate_infra_environment`: Activates environment-specific settings for AWS automation
+- `check_aws_cli`: Verifies AWS CLI is installed and available
+- `check_aws_profile`: Ensures an AWS profile environment variable is set
 
 ## Prerequisites
-- Bash shell
-- AWS CLI installed and configured
+- Bash shell (Linux, Mac, or Windows WSL)
+- AWS CLI installed and configured with credentials
+- Appropriate AWS IAM permissions for EC2 and S3
 
 ## Summary
-This project improved my skills in Bash scripting by teaching me how to structure code using functions, check for prerequisites, and handle user input for cloud automation tasks.
+By encapsulating logic in reusable functions, this script simplifies AWS infrastructure setup, reduces errors, and improves code readability. It follows best practices for DevOps automation and can be extended for more AWS services.
